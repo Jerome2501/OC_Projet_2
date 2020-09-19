@@ -1,0 +1,28 @@
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+header a
+{
+    text-decoration-line: none;
+}
+
+header a:hover
+{
+    text-decoration-line: overline;
+}
