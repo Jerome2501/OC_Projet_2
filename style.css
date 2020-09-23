@@ -6,25 +6,110 @@ body
 header
 {
     display: flex;
-    justify-content: space-between;
-}
-
-ul
-{
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    list-style-type: none;
 }
 
-header a
+#ancres
+{
+    width: 400px;
+    height: 50px;
+    text-align: center;
+}
+
+#ancres a:link
 {
     text-decoration-line: none;
+    color: black;
 }
 
-header a:hover
+#ancres a:visited
 {
-    text-decoration-line: overline;
+    color: blue;
 }
 
+.case:hover
+{
+    border-top: 1px solid blue;
+}
 
+#table_recherche
+{
+    height: 30px;
+    border-collapse: separate;
+    border-spacing: 0px;
+
+}
+
+#localisation
+{
+    width: 20px;
+    background-color: #F2F2F2;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#map-maker-alt-solid
+{
+    width: 10px;
+}
+
+#search
+{
+    width: 200px;
+    border: 1px solid #F2F2F2;
+}
+
+#search_text
+{
+    height: 30px;
+    border : white;
+}
+
+#search_button
+{
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#filtre
+{
+
+}
+
+#table_filtre
+{
+    height: 30px;
+    border-collapse: separate;
+    border-spacing: 0px;
+
+}
+
+#case_logo
+{
+    height: 30px;
+    width: 30px;
+    background-color: #DEEBFF;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#money-bill-wave-alt-solid
+{
+    width: 15px;
+    fill: blue;
+}
+
+#texte_filtre
+{
+    width: 150px;
+    border: 2px solid #DEEBFF;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
