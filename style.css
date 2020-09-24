@@ -113,3 +113,52 @@ header
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 }
+
+#hebergements
+{
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    width: 2000px;
+}
+
+#propositions_hebergements
+{
+    background-color: #F2F2F2;
+    max-width: 900px;
+    max-height: 500px;
+}
+
+#table_propositions_hebergements
+{
+    width: 700px;
+    height: 300px;
+}
+
+.photo_hebergement
+{
+    background-size: cover;
+    width: 200px;
+    max-height: 100px;
+}
+
+#plus_populaires
+{
+    background-color: #F2F2F2;
+    max-width: 400px;
+    max-height: 500px;
+}
+
+.figure_populaire
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.photo_populaire
+{
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
