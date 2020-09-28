@@ -1,164 +1,305 @@
+@font-face
+{ /* Définition d'une nouvelle police nommée Raleway */
+    font-family: 'Raleway';
+    src: url('Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
 body
 {
+    /* Paramétrage du body */
     font-family: 'Raleway', sans-serif;
+    margin-top: 0;
 }
 
 header
 {
+    /* Paramétrage du Header */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#ancres
+nav
 {
-    width: 400px;
-    height: 50px;
-    text-align: center;
+    /* Paramétrage de la section de navigation */
+    min-width: 455px;
+    max-width: 33%;
 }
 
-#ancres a:link
+nav ul
 {
+    /* Paramétrage des listes non ordonnées de la section de navigation */
+    list-style-type: none;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav a
+{
+    /* Paramétrage des liens de la section de navigation */
+    padding-top: 15px;
+    padding-left: 31px;
+    padding-right: 31px;
+}
+
+nav a:link
+{
+    /* Paramétrage des liens de la section de navigation par défaut */
     text-decoration-line: none;
     color: black;
 }
 
-#ancres a:visited
+nav a:hover
 {
-    color: blue;
+    /* Paramétrage des liens de la section de navigation en cas de survol */
+    border-top: 1px solid black;
 }
 
-.case:hover
+nav a:visited
 {
-    border-top: 1px solid blue;
+    /* Paramétrage des liens de la section de navigation si le lien a été visité */
+    color: #0065FC;
 }
 
-#table_recherche
+nav a:visited:hover
 {
-    height: 30px;
-    border-collapse: separate;
-    border-spacing: 0px;
+    /* Paramétrage des liens de la section de navigation si le lien a été visité
+    et est actuellement en survol
+    */
+    border-top: 1px solid #0065FC;
+}
 
+#dispositif_recherche
+{
+    /* Paramétrage du dispositif de recherche de la ville */
+    height: 40px;
+    width: 300px;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: row;
 }
 
 #localisation
 {
-    width: 20px;
+    /* Paramétrage de la boîte contenant l'icône de localisation
+    du dispositif de recherche*/
+    width: 10%;
     background-color: #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #map-maker-alt-solid
 {
-    width: 10px;
-}
-
-#search
-{
-    width: 200px;
-    border: 1px solid #F2F2F2;
+    /* Paramétrage de l'icône de localisation du dispositif de recherche*/
+    height: 15px;
 }
 
 #search_text
 {
-    height: 30px;
+    /* Paramétrage de la boîte contenant le texte à renseigner
+    du dispositif de recherche
+    */
+    width: 60%;
     border : white;
+    font-weight: bold;
 }
 
 #search_button
 {
-    background-color: blue;
+    /* Paramétrage du bouton du dispositif de recherche
+    */
+    background-color: #0065FC;
     color: white;
-    width: 100px;
-    height: 30px;
+    width: 30%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 #filtre
 {
-
+    /* Paramétrage de la partie contenant les filtres */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 72%;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    vertical-align: center;
 }
 
-#table_filtre
+#filtre p
 {
-    height: 30px;
-    border-collapse: separate;
-    border-spacing: 0px;
-
+    /* Paramétrage des paragraphes du filtres */
+    font-weight: bold;
+    vertical-align: center;
 }
 
-#case_logo
+.choix_filtre
 {
-    height: 30px;
-    width: 30px;
+    /* Paramétrage des cards contenus dans le filtre */
+    width: 190px;
+    border-top: 1px solid #DEEBFF;
+    border-bottom: 1px solid #DEEBFF;
+    border-right: 1px solid #DEEBFF;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choix_filtre:hover
+{
+    /* Comportement des filtres au survol */
+    border-top: 1px solid #0065FC;
+    border-bottom: 1px solid #0065FC;
+    border-right: 1px solid #0065FC;
+    border-left: 1px solid #0065FC;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.icone
+{
+    /* Paramétrage des icônes pour cahque filtre */
+    height: 15px;
+    padding: 13px;
     background-color: #DEEBFF;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-radius: 40px;
 }
 
-#money-bill-wave-alt-solid
+.texte_filtre
 {
-    width: 15px;
-    fill: blue;
-}
-
-#texte_filtre
-{
-    width: 150px;
-    border: 2px solid #DEEBFF;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    /* Paramétrage du texte des filtres */
+    position: relative;
+    right: 10%;
 }
 
 #hebergements
 {
+    /* Paramétrage de la section Hébergement */
     display: flex;
     flex-direction: row;
-    align-items: space-between;
-    width: 2000px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
 }
 
 #propositions_hebergements
 {
+    /* Paramétrage la partie contenant les différents hébergements proposés */
     background-color: #F2F2F2;
-    max-width: 900px;
-    max-height: 500px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    max-width: 66%;
+    min-height: 500px;
 }
 
-#table_propositions_hebergements
+#propositions_hebergements a
 {
-    width: 700px;
-    height: 300px;
+    text-decoration-line: none;
 }
 
-.photo_hebergement
+#div_propositions_hebergements
 {
-    background-size: cover;
-    width: 200px;
-    max-height: 100px;
+    /* Paramétrage la partie contenant les différents hébergements proposés
+    sans le titre et le lien du bas */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    min-height: 80%;
+}
+
+.card_hebergement {
+    /* Paramétrage des différentes cards constituant #div_proposition_hebergements */
+    background-color: white;
+    border-radius: 15px;
+    width: 275px;
+    height: 250px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 5px;
+}
+
+.card_hebergement img
+{
+    /* Paramétrage des images des cards */
+    /*background-size: cover;*/
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 #plus_populaires
 {
+    /* Paramétrage la partie contenant les hébergements populaires */
     background-color: #F2F2F2;
-    max-width: 400px;
-    max-height: 500px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 33%;
 }
 
-.figure_populaire
+.card_populaire
 {
+    /* Paramétrage des différentes cards constituant les hebergements populaires */
+    background-color: white;
+    height: 170px;
+    width: 350px;
     display: flex;
     flex-direction: row;
+    border-radius: 15px;
 }
 
-.photo_populaire
+.card_populaire img
 {
-    background-size: cover;
-    width: 100px;
-    height: 100px;
+    /* Paramétrage des images de .card_populaire */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 40%;
 }
 
+footer
+{
+    background-color: #F2F2F2;
+}
+
+#ensemble_de_lien
+{
+    width: 75%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.groupe_de_lien
+{
+    display: flex;
+    flex-direction: column;
+}
+
+footer a
+{
+    text-decoration-line: none;
+}

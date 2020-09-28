@@ -12,42 +12,61 @@
             <header>
                 <img src="images/logo/Reservia.svg" alt="Reservia"/>
 
-                <table id="ancres">
-                    <tr>
-                        <td class="case"><a href="#hebergements">Hébergements</a></td>
-                        <td class="case"><a href="#activites">Activités</a></td>
-                        <td class="case"><a href="#incription">S'inscrire</a></td>
-                    </tr>
-                </table>
+                <!-- Navigation -->
+                <nav>
+                    <ul>
+                        <li><a href="#hebergements">Hébergements</a></li>
+                        <li><a href="#activites">Activités</a></li>
+                        <li><a href="#incription">S'inscrire</a></li>
+                    </ul>
+                </nav>
             </header>
 
             <!-- Section 1 : Recherche -->
             <section id="recherche">
                 <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
-                <table id="table_recherche">
-                    <tr>
-                        <td align="center" valign="center" id="localisation">
-                            <img src="images/icones/map-marker-alt-solid.svg" alt="map-marker-alt-solid" id="map-maker-alt-solid"/>
-                        </td>
-                        <td id="search">
-                            <input type="search" value="Marseille, France" id="search_text">
-                        </td>
-                        <td><button id="search_button">Rechercher</button></td>
-                    </tr>
-                </table>
+
+                <div id="dispositif_recherche">
+                    <label name="lieu" id="localisation">
+                        <img src="images/icones/map-marker-alt-solid.svg" alt="map-marker-alt-solid" 
+id="map-maker-alt-solid"/>
+                    </label>
+                    <input type="search" for="lieu" value="Marseille, France" id="search_text">
+                    <button id="search_button" for="lieu">Rechercher</button>
+                </div>
 
                 <!-- Filtre -->
                 <div id="filtre">
                     <p>Filtre</p>
-                    <table id="table_filtre">
-                        <tr>
-                            <td align="center" valign="center" id="case_logo">
-                                <img src="images/icones/money-bill-wave-alt-solid.svg" alt="money-bill-wave-alt-solid" id="money-bill-wave-alt-solid"/>
-                            </td>
-                            <td align="center" id="texte_filtre">Économique</td>
-                        </tr>
-                    </table>
+
+                    <!-- Filtre Économique -->
+                    <p class="choix_filtre">
+                        <img src="images/icones/money-bill-wave-alt-solid.svg" alt="money-bill-wave-alt-solid" 
+class="icone"/>
+                        <span class="texte_filtre">Économique</span>
+                    </p>
+
+                    <!-- Filtre Familial -->
+                    <p class="choix_filtre">
+                    <img src="images/icones/money-bill-wave-alt-solid.svg" alt="money-bill-wave-alt-solid" class="icone"/>
+                        <span class="texte_filtre">Familial</span>
+
+                    </p>
+
+                    <!-- Filtre Romantique -->
+                    <p class="choix_filtre">
+                        <img src="images/icones/money-bill-wave-alt-solid.svg" alt="money-bill-wave-alt-solid" 
+class="icone"/>
+                        <span class="texte_filtre">Romantique</span>
+                    </p>
+
+                    <!-- Filtre Animaux autorisés -->
+                    <p class="choix_filtre">
+                        <img src="images/icones/money-bill-wave-alt-solid.svg" alt="money-bill-wave-alt-solid" 
+class="icone"/>
+                        Animaux autorisés
+                    </p>
                 </div>
 
                 <!-- icone information à insérer dans le paragraphe qui suit -->
@@ -61,110 +80,98 @@
 
                     <h1>Hébergements à Marseille</h1>
 
-                    <table id="table_propositions_hebergements">
-                        <tr>
-                            <td>
-                                <figure>
-                                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière" class="photo_hebergement"/>
-                                    <figcaption>
-                                        <b>Auberge La Cannebière</b></br>
-                                        Nuit à partir de 25&euro;</br>
-                                        <!-- insérer 4 étoiles -->
-                                    </figcaption>
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" class="photo_hebergement"/>
-                                    <figcaption>
-                                        <b>Hôtel du port</b></br>
-                                        Nuit à partir de 52&euro;</br>
-                                        <!-- insérer 5 étoiles -->
-                                    </figcaption>
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes" class="photo_hebergement"/>
-                                <figcaption>
-                                    <b>Hôtel Les mouettes</b></br>
-                                    Nuit à partir de 76&euro;</br>
-                                    <!-- insérer 4 étoiles -->
-                                </figcaption>
-                            </td>
-                        </tr>
-                        <figure>
-                            <td>
-                                <figure>
-                                    <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" class="photo_hebergement"/>
-                                    <figcaption>
-                                        <b>Hôtel de la mer</b></br>
-                                        Nuit à partir de 46&euro;</br>
-                                        <!-- insérer 3 étoiles -->
-                                    </figcaption>
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" class="photo_hebergement"/>
-                                    <figcaption>
-                                        <b>Auberge Le Panier</b></br>
-                                        Nuit à partir de 23&euro;</br>
-                                        <!-- insérer 4 étoiles -->
-                                    </figcaption>
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel du port" class="photo_hebergement"/>
-                                    <figcaption>
-                                        <b>Hôtel chez Amina</b></br>
-                                        Nuit à partir de 96&euro;</br>
-                                        <!-- insérer 5 étoiles -->
-                                    </figcaption>
-                                </figure>
-                            </td>
-                        </tr>
-                    </table>
+                    <div id="div_propositions_hebergements">
+                        <figure class="card_hebergement">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La 
+Cannebière"/>
+                            <figcaption>
+                                <b>Auberge La Cannebière</b></br></br>
+                                Nuit à partir de 25&euro;</br></br>
+                                <!-- insérer 4 étoiles -->
+                            </figcaption>
+                        </figure>
+                        <figure class="card_hebergement">
+                            <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel
+du port"/>
+                            <figcaption>
+                                <b>Hôtel du port</b></br></br>
+                                Nuit à partir de 52&euro;</br></br>
+                                <!-- insérer 5 étoiles -->
+                            </figcaption>
+                        </figure>
+                        <figure class="card_hebergement">
+                             <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel
+Les mouettes"/>
+                             <figcaption>
+                                <b>Hôtel Les mouettes</b></br></br>
+                                Nuit à partir de 76&euro;</br></br>
+                                <!-- insérer 4 étoiles -->
+                             </figcaption>
+                        </figure>
+                        <figure class="card_hebergement">
+                            <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de
+la mer"/>
+                            <figcaption>
+                                <b>Hôtel de la mer</b></br></br>
+                                Nuit à partir de 46&euro;</br></br>
+                                <!-- insérer 3 étoiles -->
+                            </figcaption>
+                        </figure>
+                        <figure class="card_hebergement">
+                            <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le
+Panier"/>
+                            <figcaption>
+                                <b>Auberge Le Panier</b></br></br>
+                                Nuit à partir de 23&euro;</br></br>
+                                <!-- insérer 4 étoiles -->
+                            </figcaption>
+                        </figure>
+                        <figure class="card_hebergement">
+                            <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel
+du port"/>
+                            <figcaption>
+                                <b>Hôtel chez Amina</b></br></br>
+                                Nuit à partir de 96&euro;</br></br>
+                                <!-- insérer 5 étoiles -->
+                            </figcaption>
+                        </figure>
 
-                    <p><b>Afficher plus</b></p>
+                    </div>
+
+                    <a href="index.html"></br><strong>Afficher plus</strong></a></br>
                 </div>
-                <div id="plus_populaires">
+
+                <aside id="plus_populaires">
                     <h1>Les plus populaires</h1>
-                    <table>
-                        <tr>
-                            <figure class="figure_populaire">
-                                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" class="photo_populaire"/>
-                                <figcaption>
-                                    <b>Hôtel Le soleil du matin</b></br>
-                                    Nuit à partir de 128&euro;</br>
-                                    <!-- insérer 5 étoiles -->
-                                </figcaption>
-                            </figure>
-                        </tr>
-                        <tr>
-                            <figure class="figure_populaire">
-                                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes" class="photo_populaire"/>
-                                <figcaption>
-                                    <b>Au coeur de l'eau</b></br>
-                                    <b>Chambres d'hôtes</b></br>
-                                    Nuit à partir de 71&euro;</fbr>
-                                    <!-- insérer 5 étoiles -->
-                                </figcaption>
-                            </figure>
-                        </tr>
-                        <tr>
-                            <figure class="figure_populaire">
-                                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc" class="photo_populaire"/>
-                                <figcaption>
-                                    <b>Hôtel Tout bleu et Blanc</b></br>
-                                    Nuit à partir de 68&euro;</br>
-                                    <!-- insérer 4 étoiles -->
-                                </figcaption>
-                            </figure>
-                        </tr>
-                    </table>
-                </div>
+                    <figure class="card_populaire">
+                        <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le
+soleil du matin"/>
+                        <figcaption>
+                            <b>Hôtel Le soleil du matin</b></br>
+                            Nuit à partir de 128&euro;</br>
+                            <!-- insérer 5 étoiles -->
+                        </figcaption>
+                    </figure>
+                    <figure class="card_populaire">
+                        <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau 
+Chambres d'hôtes"/>
+                        <figcaption>
+                            <b>Au coeur de l'eau</b></br>
+                            <b>Chambres d'hôtes</b></br>
+                            Nuit à partir de 71&euro;</br>
+                            <!-- insérer 5 étoiles -->
+                        </figcaption>
+                    </figure>
+                    <figure class="card_populaire">
+                        <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel
+Tout bleu et Blanc"/>
+                        <figcaption>
+                            <b>Hôtel Tout bleu et Blanc</b></br>
+                            Nuit à partir de 68&euro;</br>
+                            <!-- insérer 4 étoiles -->
+                        </figcaption>
+                    </figure>
+                </aside>
             </section>
 
             <!-- Section 3 : Activités -->
@@ -185,12 +192,14 @@
                     </div>
                 </div>
                 <div>
-                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" />
+                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des 
+Calanques" />
                     <h1>Parc National des Calanques</h1>
                 </div>
                 <div>
                     <div>
-                        <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" />
+                        <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" 
+alt="Notre-Dame-de-la-Garde" />
                         <h1>Notre-Dame-de-la-Garde</h1>
                     </div>
                     <div>
@@ -203,21 +212,23 @@
 
             <!-- Footer -->
             <footer>
-                <div>
-                    <a><strong>A propos</strong></a>
-                    <a>Fonctionnement du site</a>
-                    <a>Conditions générales de vente</a>
-                    <a>Données et confidentialité</a>
-                </div>
-                <div>
-                    <a><strong>Nos hébergements</strong></a>
-                    <a>Charte qualité</a>
-                    <a>Soumettre votre hôtel</a>
-                </div>
-                <div>
-                    <a><strong>Assistance</strong></a>
-                    <a>Centre d'aide</a>
-                    <a>Nous contacter</a>
+                <div id="ensemble_de_lien">
+                    <div class="groupe_de_lien">
+                        <a href="index.html"><strong>A propos</strong></a>
+                        <a href="index.html">Fonctionnement du site</a>
+                        <a href="index.html">Conditions générales de vente</a>
+                        <a href="index.html">Données et confidentialité</a>
+                    </div>
+                    <div class="groupe_de_lien">
+                        <a href="index.html"><strong>Nos hébergements</strong></a>
+                        <a href="index.html">Charte qualité</a>
+                        <a href="index.html">Soumettre votre hôtel</a>
+                    </div>
+                    <div class="groupe_de_lien">
+                        <a href="index.html"><strong>Assistance</strong></a>
+                        <a href="index.html">Centre d'aide</a>
+                        <a href="index.html">Nous contacter</a>
+                    </div>
                 </div>
 
             </footer>
