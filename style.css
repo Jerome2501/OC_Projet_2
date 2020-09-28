@@ -180,6 +180,9 @@ nav a:visited:hover
     border-radius: 40px;
 }
 
+/* Attention : le dernier élément du filtre n'a pu etre inséré dans la classe
+   (Débordement du texte)
+ */
 .texte_filtre
 {
     /* Paramétrage du texte des filtres */
@@ -278,13 +281,54 @@ nav a:visited:hover
     width: 40%;
 }
 
+#activité
+{
+    min-height: 450px;
+}
+
+#ensemble_des_activites
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#ensemble_des_activites img
+{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#ensemble_des_activites figcaption
+{
+    height: 50px;
+}
+
+.figure_max
+{
+    width : 400px;
+    height : 100%;
+}
+
+.figure_max img
+{
+
+}
+
+.groupe_de_deux
+{
+    width : 400px;
+}
+
 footer
 {
+    /* Paramétrage du footer */
     background-color: #F2F2F2;
 }
 
 #ensemble_de_lien
 {
+    /* Paramétrage de l'ensemble des 3 groupes de liens du footer */
     width: 75%;
     margin-left: 30px;
     display: flex;
@@ -295,11 +339,13 @@ footer
 
 .groupe_de_lien
 {
+    /* Paramétrage des groupes de liens du footer */
     display: flex;
     flex-direction: column;
 }
 
 footer a
 {
+    /* Paramétrage des liens du footer */
     text-decoration-line: none;
 }
